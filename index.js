@@ -101,11 +101,12 @@ function submition(event) {
   }
 };
 
-
 //sharing
 
-function shareToStatus() {  
-    window.open('https://web.whatsapp.com://status?text= https://www.youtube.com/watch?v=ohpCMpderow');  
-    }  
+const share = document.querySelector('#shares');
+share.addEventListener('click', function(){
+  share.classList.toggle('active');
+})
+
 
 })();

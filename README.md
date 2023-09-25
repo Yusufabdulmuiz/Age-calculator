@@ -24,6 +24,6 @@ I welcome contributions and bug reports. Feel free to fork this project and subm
 
 ## Support
 
-If you encounter any issues or have questions, please [contact Abdulmuiz](mailto: devaburidwan@gmail.com).
+If you encounter any issues or have questions, please [contact me](mailto:devaburidwan@gmail.com).
 
 

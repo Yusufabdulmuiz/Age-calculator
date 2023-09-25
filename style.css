@@ -116,6 +116,42 @@ small{
  span {
   color: var(--purple);
 }
+/***share**/
+#shares {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+ #socials {
+  display: none;
+  gap: .5rem;
+  padding-top: 1rem;
+
+} 
+.active #socials {
+  display: grid;
+}
+
+ i {
+  font-size: 24px;
+}
+#socials i {
+  font-size:16px;
+}
+.fa-share-nodes {
+  color: var(--purple);
+}
+.fa-x-twitter{
+  color:var(--off-black);
+}
+
+ .fa-whatsapp {
+  color: #34B7F1;
+}
+
+
 
 /***Desktop view **/
 

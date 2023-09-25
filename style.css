@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*{
+ padding: 0;
+ margin:0;
+ box-sizing: border-box;
+}
+:root {
+ --purple: hsl(259, 100%, 65%);
+ --light-red: hsl(0, 100%, 67%);
+--white: hsl(0, 0%, 100%);
+--off-white: hsl(0, 0%, 94%);
+--light-grey: hsl(0, 0%, 86%);
+--smokey-grey: hsl(0, 1%, 44%);
+--off-black: hsl(0, 0%, 8%);
+
+}
+body{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: var(--light-grey);
+}
+a {
+  text-decoration: none;
+  color: var(--purple);
+}
+/**mobile view**/
+
+main {
+  background: var(--white);
+  max-width: 300px;
+  border-radius:  15px 15px 25% 15px;
+}
+
+#container {
+  padding: 1.5rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+#inputs{
+  display: flex;
+  gap:1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.input-div{
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight:600;
+  color: var(--smokey-grey);
+}
+input  {
+ width: 100%;
+ font-size:16px; 
+ font-weight: 900;
+ padding: .5rem;
+ border-radius: .4rem;
+ border: 1px solid var(--light-grey);
+ cursor: pointer;
+}
+
+input::placeholder{
+  font-weight: 600;
+}
+
+
+small{
+  font-size: 8px;
+  color: var(--light-red);
+}
+#submit-div {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+}
+#submit-div hr{
+  width: 100%;
+  height: 1px;
+}
+#submit-div button {
+    background: var(--purple);
+    border: none;
+    padding: .5rem ;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .3s ease;
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    
+}
+
+ #submit-div button:hover{
+   background: var(--off-black);
+ }
+
+#output h1{
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 800;
+}
+ span {
+  color: var(--purple);
+}
+
+/***Desktop view **/
+
+@media screen and (min-width:765px) {
+  main {
+    min-width: 600px;
+  }
+  container {
+  padding: 1.5rem;
+}
+form{
+  row-gap: 1.5rem;
+}
+#inputs{
+  justify-content: space-around;
+}
+
+
+label {
+  font-size: 22px;
+}
+input  {
+ font-size:32px; 
+ padding: 1rem;
+ border-radius: .7rem;
+
+}
+
+
+small{
+  font-size: 12px;
+}
+
+
+
+#output h1{
+  font-size: 5rem;
+}
+
+}

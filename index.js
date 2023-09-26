@@ -59,6 +59,16 @@ function validate () {
       yearInput.style.borderColor ='red';
       validator = false;
     }
+      else if (yearInput.value == year) {
+    if (monthInput.value > month || (monthInput.value == month && dayInput.value > day)) {
+      const parent = dayInput.parentElement;
+      parent.querySelector('small').innerHTML = 'Date cannot be in the future';
+      dayInput.style.borderColor = 'red';
+      monthInput.style.borderColor = 'red';
+      yearInput.style.borderColor = 'red';
+      validator = false;
+    }
+                }
     else {
       parent.querySelector('small').innerHTML = '';
       parent.querySelector('label').style.color = 'black';
